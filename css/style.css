@@ -186,28 +186,33 @@ header {
   height: auto;
   background: white;
   box-shadow: 0px 6px 59px rgba(53, 49, 84, 0.08);
-  display: none;
   top: 0;
-  display: flex;
+  left: 0;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-  transition: 300ms all ease-in-out;
-  opacity: 0; }
+  transition: 300ms all ease-in-out; }
   .nav-display .link {
     display: flex;
     flex-direction: column; }
-    .nav-display .link section a {
-      margin-left: 10px;
-      font-family: 'Open Sans', sans-serif; }
+    .nav-display .link section {
+      margin: auto;
+      display: flex;
+      justify-content: center; }
+      .nav-display .link section a {
+        margin: auto;
+        margin-left: 10px;
+        font-family: 'Open Sans', sans-serif; }
     .nav-display .link a {
       color: rgba(84, 65, 175, 0.9);
       text-decoration: none;
       margin-top: 10px;
       font-family: 'Open Sans', sans-serif;
-      transition: 300ms all ease-in-out; }
-      .nav-display .link a:hover, .nav-display .link a:focus-within {
+      transition: 300ms all ease-in-out;
+      text-align: center; }
+      .nav-display .link a:hover, .nav-display .link a:focus-within, .nav-display .link a:focus {
         color: #FF353A; }
   .nav-display .icon {
     width: 100%;
