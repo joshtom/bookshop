@@ -18,6 +18,7 @@ header {
   header nav {
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
     header nav .logo span {
@@ -45,6 +46,27 @@ header {
     header nav .icons {
       display: flex;
       flex-basis: 120px;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-top: auto; }
+      header nav .icons a.show {
+        display: none; }
+
+@media screen and (max-width: 750px) {
+  .links {
+    display: none !important; }
+
+  .hide {
+    display: none; }
+
+  .icons .shop-bag, .icons .show {
+    margin-left: auto; }
+  .icons a.show {
+    display: block !important;
+    text-decoration: none;
+    font-weight: 900;
+    color: #1C2A39;
+    letter-spacing: .1em; }
+    .icons a.show:focus, .icons a.show:focus-within {
+      text-decoration: underline; } }
 
 /*# sourceMappingURL=style.css.map */
