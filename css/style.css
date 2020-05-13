@@ -220,6 +220,7 @@ header {
     justify-content: space-between; }
     .nav-display .icon a {
       color: black;
+      padding: 14px;
       text-decoration: none;
       font-family: 'Open Sans', sans-serif; }
 
