@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-* { font-family: 'Montserrat', sans-serif; box-sizing: border-box; margin: 0;}
-.container-fluid {
-    max-width: 1120px;
-    margin: auto;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+* { font-family: 'Montserrat', sans-serif; box-sizing: border-box; margin: 0; }
+body {
+    width: 100%;
 }
-@import 'nav', 'banner'
+.container-fluid {
+    max-width: 90%;
+    margin: auto; 
+    overflow: word-wrap;
+
+    @media screen and(max-width: 500px){
+        min-width: 90%;
+    }
+}
+@import 'nav', 'banner', 'main'
 

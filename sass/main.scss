@@ -1,11 +1,137 @@
 .main {
-    width: 100%;
+    width: 90%;
+    height: auto;
     display: flex;
+    margin: -80px auto 0px auto;
+    flex-flow: row wrap;
     justify-content: space-between;
+    // background: red;
 
     .card {
-        width: 424px;
-        height: 300px;
-        background: red;
+        display: flex;
+        max-width: 424px;
+        min-height: 300px;
+        margin-top: 40px;
+        align-items: center;
+
+
+        section:nth-child(2) {
+            background: red($color: #000000);
+            margin-left: 20px;
+
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 14px;
+                /* identical to box height */
+                text-transform: capitalize;
+                /* text gray */
+                color: #5C6A79;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #1C2A39;
+            }
+            article {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 14px;
+                text-transform: capitalize;
+                margin: 10px 0px 10px 0px;
+                width: 100%;
+                word-wrap: break-word;
+            }
+            .amount {
+                span.text-bold {
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 16px;
+                    /* identical to box height */
+                    text-transform: uppercase;
+                }
+                span {
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-size: 13px;
+                    line-height: 16px;
+                    /* identical to box height */
+                    text-transform: uppercase;
+                }
+                
+            }
+            button {
+                border: 1px solid #4C3DB2;
+                width: 90%;
+                height: 45px;
+                background: none;
+                color: #4C3DB2;
+                margin-top: 10px;
+                font-weight: bolder;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 8px;
+                line-height: 10px;
+                transition:300ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+                cursor: pointer;
+
+                &:hover {
+                    background: #4C3DB2;
+                    color: #fff;
+                }
+            }
+        }
+        
+        
+    }
+   
+}
+
+@media screen and (max-width: 943px){
+    .card {
+        min-width: 90% !important;
+        // margin: auto;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .main {
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+    
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        min-width: 90% !important;
+        margin-left: -10px !important;
+
+        section:nth-child(2) {
+            margin-left: 10px !important;
+        }
+      img {
+          width: 150px;
+      }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        min-width: 100%;
+        // background: red;
     }
 }
