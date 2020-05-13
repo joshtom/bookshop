@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 * { font-family: 'Montserrat', sans-serif; box-sizing: border-box; margin: 0;}
 .container-fluid {
-    width: 90%;
+    max-width: 1120px;
     margin: auto;
 }
 @import 'nav', 'banner', 'promo', 'card', 'categories'
